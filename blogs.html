@@ -30,18 +30,19 @@
                         <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                             aria-controls="panelsStayOpen-collapseOne">
-                            Accordion Item #1
+                            Difference between local storage and session storage?
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                         aria-labelledby="panelsStayOpen-headingOne">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                            The difference is that with sessionStorage , the data is persisted only until the window or
+                            tab is closed. With localStorage , the data is persisted until the user manually clears the
+                            browser cache or until your web app clears the data. SessionStorage is similar to
+                            localStorage ; the difference is that while data in localStorage doesn't expire, data in
+                            sessionStorage is cleared when the page session ends. Whenever a document is loaded in a
+                            particular tab in the browser, a unique page session gets created and assigned to that
+                            particular tab
                         </div>
                     </div>
                 </div>
@@ -50,18 +51,26 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseTwo">
-                            Accordion Item #2
+                            Difference between local scope and block scope?
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingTwo">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                            the collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                            The main difference between the local scope and block scope is that the block statements
+                            (e.g. if conditions or for loops), don't create a new scope. So the var keyword will not
+                            have an effect, because the variables are still in the same scope. ES6 introduced block
+                            scope by using the let and const keywords. <br>
+                            <strong>The Global scope : </strong>A variable exists inside or outside a block. If a
+                            variable is declared outside all functions or curly braces ({}), it exists in the global
+                            scope. The global variables can be accessed by any line of code in the program, including
+                            inside blocks.<br>
+                            <strong>The Block scope : </strong> A block scope is a piece of code inside a set of curly
+                            braces {} and groups code statements together. Block scope use let and const.If you declare
+                            inside block means inside function we can asses only this function, you cant call out side
+                            of this function.
+
+                            other hand global variable you can accesse any where.
                         </div>
                     </div>
                 </div>
@@ -70,18 +79,19 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseThree">
-                            Accordion Item #3
+                            How javascript event loop works?
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingThree">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                            JavaScript has a runtime model based on an event loop, which is responsible for executing
+                            the code, collecting and processing events, and executing queued sub-tasks. This model is
+                            quite different from models in other languages like C and Java. <br>
+                            The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the
+                            Call Stack is empty, the Event Loop will take the first event from the queue and will push
+                            it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the
+                            Event Loop.
                         </div>
                     </div>
                 </div>
@@ -90,7 +100,7 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseFour">
-                            Accordion Item #3
+                            How many ways can undefined values be obtained in javascript?
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
