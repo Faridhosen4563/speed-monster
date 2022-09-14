@@ -151,6 +151,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -194,7 +195,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   #histories {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
