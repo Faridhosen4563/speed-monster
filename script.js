@@ -41,6 +41,11 @@ const typeController = (e) => {
   userText += newLetter;
 
   const newLetterCorrect = validate(newLetter);
+  window.addEventListener('keydown', (e) => {
+    if (e.keyCode === 32 && e.target === document.body) {
+      e.preventDefault();
+    }
+  });
 
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
