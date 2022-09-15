@@ -34,7 +34,7 @@ function displayHistory() {
   <h3>${test.questionText}</h3>
   <p>You took: <span class="bold">${test.timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${test.errorCount}</span> mistakes</p>
-    <p>Your wpm: <span class="bold">${test.wordPerTime}</span> seconds</p>
+    <p>Your wpm: <span class="bold">${test.wordPerTime}</span></p>
   `;
 
     histories.appendChild(newRow);
