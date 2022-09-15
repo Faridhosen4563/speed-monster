@@ -76,6 +76,7 @@ const gameOver = () => {
   const finishTime = new Date().getTime();
   const timeTakenFloat = (finishTime - startTime) / 1000;
   const timeTaken = parseInt(timeTakenFloat);
+  const wordPerTime = parseInt((userText.length / timeTaken) * 60);
 
   // show result modal
   resultModal.innerHTML = "";
@@ -90,10 +91,11 @@ const gameOver = () => {
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
+    <p>Your wpm : <span class="bold">${wordPerTime}</span></p>
     <button onclick="closeModal()">Close</button>
   `;
 
-  addHistory(questionText, timeTaken, errorCount);
+  addHistory(questionText, timeTaken, errorCount, wordPerTime);
 
   // restart everything
   startTime = null;
@@ -116,8 +118,6 @@ const start = () => {
 
   const startCountdown = setInterval(() => {
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
-
-    console.log(count)
 
     // finished timer
     if (count === 0) {
